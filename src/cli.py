@@ -2,6 +2,7 @@ import typer
 
 from day_1 import solution as day_1
 from day_2 import solution as day_2
+from day_3 import solution as day_3
 
 app = typer.Typer()
 
@@ -28,6 +29,18 @@ def day_2a():
 def day_2b():
     solve = day_2.solution_b()
     typer.echo("Sum of game powers is " + str(solve))
+
+
+@app.command()
+def day_3a():
+    solve = day_3.solution_a()
+    typer.echo("Sum is " + str(solve))
+
+
+@app.command()
+def day_3b():
+    solve = day_3.solution_b()
+    typer.echo("Sum of rations is " + str(solve))
 
 
 if __name__ == "__main__":
