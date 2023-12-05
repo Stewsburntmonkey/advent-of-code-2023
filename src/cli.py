@@ -4,6 +4,7 @@ from day_1 import solution as day_1
 from day_2 import solution as day_2
 from day_3 import solution as day_3
 from day_4 import solution as day_4
+from day_5 import solution as day_5
 
 app = typer.Typer()
 
@@ -54,6 +55,18 @@ def day_4a():
 def day_4b():
     solve = day_4.solution_b()
     typer.echo("Total Cards: " + str(solve))
+
+
+@app.command()
+def day_5a():
+    solve = day_5.solution_a()
+    typer.echo("Miminum location: " + str(solve))
+
+
+@app.command()
+def day_5b():
+    solve = day_5.solution_b()
+    typer.echo("Miminum location: " + str(solve))
 
 
 if __name__ == "__main__":
