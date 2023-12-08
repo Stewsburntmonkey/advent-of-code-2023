@@ -52,7 +52,3 @@ def test_seed_locations():
 def test_seed_range_location():
     almanac = solution.parse_input(LINES)
     assert almanac.seed_range_location() == 46
-
-
-def test_solution_b():
-    assert solution.solution_b() == -1
