@@ -8,6 +8,7 @@ from day_5 import solution as day_5
 from day_6 import solution as day_6
 from day_7 import solution as day_7
 from day_8 import solution as day_8
+from day_9 import solution as day_9
 
 
 app = typer.Typer()
@@ -107,6 +108,18 @@ def day_8a():
 def day_8b():
     solve = day_8.solution_b()
     typer.echo("Path length: " + str(solve))
+
+
+@app.command()
+def day_9a():
+    solve = day_9.solution_a()
+    typer.echo("Sum: " + str(solve))
+
+
+@app.command()
+def day_9b():
+    solve = day_9.solution_b()
+    typer.echo("Sum: " + str(solve))
 
 
 if __name__ == "__main__":
