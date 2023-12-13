@@ -11,6 +11,9 @@ from day_8 import solution as day_8
 from day_9 import solution as day_9
 from day_10 import solution as day_10
 from day_11 import solution as day_11
+from day_12 import solution as day_12
+from day_13 import solution as day_13
+
 
 app = typer.Typer()
 
@@ -145,6 +148,31 @@ def day_11a():
 def day_11b():
     solve = day_11.solution_b()
     typer.echo("Sum of distances: " + str(solve))
+
+
+@app.command()
+def day_12a():
+    solve = day_12.solution_a()
+    typer.echo("Sum: " + str(solve))
+
+
+@app.command()
+def day_12b():
+    solve = day_12.solution_b()
+    typer.echo("Sum: " + str(solve))
+
+
+@app.command()
+def day_13a():
+    solve = day_13.solution_a()
+    typer.echo("Summary: " + str(solve))
+
+
+@app.command()
+def day_13b():
+    solve = day_13.solution_b()
+    typer.echo("Summary: " + str(solve))
+
 
 if __name__ == "__main__":
     app()
