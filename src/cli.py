@@ -13,6 +13,8 @@ from day_10 import solution as day_10
 from day_11 import solution as day_11
 from day_12 import solution as day_12
 from day_13 import solution as day_13
+from day_14 import solution as day_14
+from day_15 import solution as day_15
 
 
 app = typer.Typer()
@@ -172,6 +174,18 @@ def day_13a():
 def day_13b():
     solve = day_13.solution_b()
     typer.echo("Summary: " + str(solve))
+
+
+@app.command()
+def day_15a():
+    solve = day_15.solution_a()
+    typer.echo("Hash Sum: " + str(solve))
+
+
+@app.command()
+def day_15b():
+    solve = day_15.solution_b()
+    typer.echo("Power: " + str(solve))
 
 
 if __name__ == "__main__":
